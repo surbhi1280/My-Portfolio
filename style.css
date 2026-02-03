@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: 'Segoe UI', sans-serif;
+    color: #a0a0a0;
+    line-height: 1.7;
+}
+
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 330px 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+/* Sidebar */
+.sidebar{
+    height: fit-content;
+    background-color:#2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 35px;
+    position: sticky;
+    top: 40px;
+}
+
+/* Main Content */
+.main-content{
+    background-color:#2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+/* Profile */
+.profile{
+    text-align: center;
+}
+
+.profile img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 2px solid #FFBF00;
+}
+
+.profile h2{
+    font-size: 1.4rem;
+    margin-top: 18px;
+    color: #e0e0e0;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    padding: 6px 14px;
+    color: #FFBF00;
+    border: 1px solid #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Contact */
+.contact{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top:20px;
+}
+
+.label{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.email,.phone{
+    margin-bottom: 15px;
+}
+
+/* Social */
+.social{
+    margin-top: 30px;
+    border-top: 2px solid #3a3a3a;
+    padding-top:20px;
+    text-align: center;
+}
+
+.social img{
+    height: 22px;
+    width: 22px;
+    margin: 0 6px;
+    filter: grayscale(1) invert(0.7);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social img:hover{
+    transform: scale(1.2);
+    filter: grayscale(0) invert(0);
+}
+
+/* Navigation */
+#navigation{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+.active, nav a:hover{
+    color: #FFBF00;
+}
+
+/* Headings */
+.heading{
+    color: #e0e0e0;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+.line{
+    width: 55px;
+    height: 4px;
+    background-color: #FFBF00;
+    margin-bottom: 20px;
+}
+
+.content{
+    text-align: justify;
+}
+
+/* Skills */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(120px,1fr));
+    gap: 20px;
+}
+
+.item{
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+    background-color: #1e1e1e;
+    text-align: center;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item h3{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #FFBF00;
+}
+
+.item:hover{
+    transform: translateY(-6px);
+}
+
+/* Education */
+#education{
+    margin-top: 40px;
+}
+
+.edtech{
+    position: relative;
+}
+
+.edfirst, .edsecond{
+    margin-bottom: 35px;
+    padding-left: 30px;
+    position: relative;
+}
+.goal{
+    height: 14px;
+    width: 14px;
+    border: 3px solid #FFBF00;
+    border-radius: 50%;
+    position: absolute;
+    top:6px;
+    left: 0;
+}
+
+.liner{
+    position: absolute;
+    width: 2px;
+    top:0;
+    bottom: 0;
+    left: 6px;
+    background-color: #3a3a3a;
+}
+
+/* Projects */
+.project-container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.project{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    transition: transform 0.4s ease;
+}
+
+.project:hover{
+    transform: translateY(-8px);
+}
+
+.certifications ul {
+margin-top: 15px;
+padding-left: 20px;
+}
+
+.card{
+    padding: 20px;
+}
+
+.card h3{
+    color: #e0e0e0;
+    margin-bottom: 8px;
+}
+
+.card p{
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.card span{
+    background-color: rgba(255, 191, 0, 0.15);
+    color: #FFBF00;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .sidebar{
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
