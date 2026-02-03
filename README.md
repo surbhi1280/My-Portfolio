@@ -1,1 +1,1 @@
-# My-Portfolio
+Designed and developed a personal portfolio website using HTML and CSS to showcase skills, education, projects, and certifications. Implemented a clean and responsive layout with a user-friendly interface to ensure accessibility across different devices.
